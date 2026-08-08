@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>♡ Our Little World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       🌙 ОСНОВНОЙ КОНТЕЙНЕР
+       ========================================================= -->
+  <main id="app">
+
+    <!-- =======================================================
+         💿 ГЛАВНЫЙ ЭКРАН / ВИНИЛ
+         ======================================================= -->
+    <section id="homeScreen" class="screen active">
+      <div class="home-bg"></div>
+
+      <div class="home-content">
+        <button id="vinylButton" class="vinyl-button" aria-label="Открыть открытку">
+          <span class="vinyl">
+            <img id="vinylImage" src="images/vinyl.jpg" alt="Изображение на виниле">
+            <span class="vinyl-grooves"></span>
+            <span class="vinyl-shine"></span>
+            <span class="vinyl-center"></span>
+          </span>
+        </button>
+
+        <div id="homeButtons" class="home-buttons" aria-hidden="true">
+          <button class="menu-button" data-page="letter">Любовное письмо :3 .ᐟ</button>
+          <button class="menu-button" data-page="music">Наш саундтрек ۶ৎ</button>
+          <button class="menu-button" data-page="puzzle">Пазл (:3 っ)∋</button>
+          <button class="menu-button" data-page="maze">Лабиринт ( ꩜ ᯅ ꩜;)⁭ ⁭</button>
+          <button class="menu-button" data-page="runner">Раннер (⁠｡⁠•̀⁠ᴗ⁠-⁠)⁠✧</button>
+          <button class="menu-button" data-page="shame">Доска позора &gt;_&lt;</button>
+          <button class="menu-button" data-page="gift">Мистический подарок (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</button>
+        </div>
+
+        <!-- =====================================================
+             🔑 ИНВЕНТАРЬ
+             ===================================================== -->
+        <div id="keyInventory" class="key-inventory" aria-label="Инвентарь ключей">
+          <div class="inventory-label">KEYS</div>
+          <div class="key-slots">
+            <div class="key-slot" data-slot="0"></div>
+            <div class="key-slot" data-slot="1"></div>
+            <div class="key-slot" data-slot="2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         📄 ВНУТРЕННИЕ ЭКРАНЫ
+         ======================================================= -->
+    <section id="letterScreen" class="screen inner-screen">
+      <button class="back-button" data-back>← назад</button>
+      <div class="letter-wrapper">
+        <div class="letter-paper">
+          <img src="images/letter.jpg" alt="Пергамент">
+          <div class="letter-text">
+            <!-- ✏️ ЗАМЕНИТЕ ЭТОТ ТЕКСТ НА СВОЙ -->
+            <h1>Моему рыбкину</h1>
+            <p>Ванечка, Ванюша, мой любимый рыбкин, моя душа, мой нежный лучик света, солнце моей жизни! Я думаю что кириллицу изобрели только для того чтобы тысячи лет спустя мы с тобой могли пообщаться и ты могла написать мне свое письмо и я мог написать тебе свое. Скажу тебе честно, я пишу это будучи полудохлым, и ты единственный кто держит меня от восхождения на небеса (мы не попадём в рай), и кто даёт мне мотивацию делать все это. Я тебе за это безумно благодарен и знаешь это очередное доказательство того что ванели это терапия. Я бесконечно восхищаюсь тобой и восхищался все то время что знал тебя, мой рыбкин соулмейт :3 ты самая самая лучшая, даже если сейчас я не могу найти правильных слов для этого, клянусь мои слова просто не могут этого выразить. Моя самая любимая, умная, красивая, талантливая и вдумчивая, романтичная и смешная, ты для меня пример и мотивация и друг и партнёр. И раз уж я не имею возможности !пока что! написать много, я выражу это мемами:</p>
+            <p>You're 6 for my 7</p>
+            <p>I'd rather be smooching my nerdy girlfriend.</p>
+            <p>What should we do? Each other.</p>
+            <p>Блять Я нахуй блять щас блять щас нахуй</p>
+            <p>GYUUUUUUUUU</p>
+            <p>Блять Димас фоткай быстрее! Реще блять фоткай!</p>
+            <p>Ванели during a task that doesn't require ванели</p>
+            <p>Те кто ебался ИДИТЕ НАХУЙ</p>
+            <p>Ну допустим мы hopelessly romantic, и что?</p>
+            <p>ПОГНАЛИ НАХУЙ!!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="musicScreen" class="screen inner-screen">
+      <button class="back-button" data-back>← назад</button>
+      <div class="simple-card">
+        <h1>Наш саундтрек ۶ৎ</h1>
+        <p>Тапни кнопочку ниже, чтобы открыть наш плейлист хех.</p>
+        <!-- ✏️ ВСТАВЬТЕ ССЫЛКУ НА YOUTUBE MUSIC -->
+        <a id="playlistLink" class="big-link" href="https://music.youtube.com/playlist?list=PLenIyQKaz7AI" target="_blank" rel="noopener noreferrer">
+          открыть плейлист ۶ৎ
+        </a>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         🧩 ПАЗЛ
+         ======================================================= -->
+    <section id="puzzleScreen" class="screen game-screen">
+      <button class="back-button" data-back>← назад</button>
+      <div class="game-header">
+        <h1>Пазл (:3 っ)∋</h1>
+        <p id="puzzleStatus">Собери яйичке пазл :Р</p>
+      </div>
+
+      <div id="puzzleBoard" class="puzzle-board"></div>
+      <div id="puzzlePieces" class="puzzle-pieces"></div>
+
+      <button id="puzzleReset" class="secondary-button">перемешать</button>
+    </section>
+
+    <!-- =======================================================
+         🌿 ЛАБИРИНТ
+         ======================================================= -->
+    <section id="mazeScreen" class="screen nature-screen">
+      <div class="nature-overlay"></div>
+      <button class="back-button" data-back>← назад</button>
+
+      <div class="game-header nature-header">
+        <h1>Лабиринт ( ꩜ ᯅ ꩜;)⁭ ⁭</h1>
+        <p id="mazeStatus">Проведи рыбку (тебя) к тюленю (мне).</p>
+      </div>
+
+      <div id="mazeBoard" class="maze-board"></div>
+
+      <div id="mobileControls" class="mobile-controls">
+        <button data-move="up">↑</button>
+        <div>
+          <button data-move="left">←</button>
+          <button data-move="down">↓</button>
+          <button data-move="right">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         🏃 РАННЕР
+         ======================================================= -->
+    <section id="runnerScreen" class="screen nature-screen">
+      <div class="nature-overlay"></div>
+      <button class="back-button" data-back>← назад</button>
+
+      <div class="game-header nature-header">
+        <h1>Раннер (⁠｡⁠•̀⁠ᴗ⁠-⁠)⁠✧</h1>
+        <p id="runnerStatus">Преодолено: <span id="runnerScore">0</span> / 20</p>
+      </div>
+
+      <div id="runnerGame" class="runner-game">
+        <div id="runnerFish" class="runner-fish">
+          <img src="images/fish.png" alt="Рыбка">
+        </div>
+        <div id="runnerSeal" class="runner-seal hidden">
+          <img src="images/seal.png" alt="Тюлень">
+        </div>
+      </div>
+
+      <button id="jumpButton" class="jump-button">ПРЫЖОК</button>
+      <p class="runner-help">Нажми на экран или кнопку, чтобы прыгнуть.</p>
+    </section>
+
+    <!-- =======================================================
+         🖼️ ДОСКА ПОЗОРА
+         ======================================================= -->
+    <section id="shameScreen" class="screen inner-screen">
+      <button class="back-button" data-back>← назад</button>
+      <div class="gallery-header">
+        <h1>Доска позора &gt;_&lt;</h1>
+        <p>Полюбуйся на свое позорное поведение.</p>
+      </div>
+
+      <!-- ✏️ ДОБАВЛЯЙТЕ СЮДА СВОИ КАРТИНКИ.
+           Можно копировать блок figure сколько угодно раз. -->
+      <div class="shame-gallery">
+        <figure class="shame-item" data-sound>
+          <img src="images/shame1.png" alt="Доска позора 1">
+        </figure>
+        <figure class="shame-item" data-sound>
+          <img src="images/shame2.png" alt="Доска позора 2">
+        </figure>
+        <figure class="shame-item" data-sound>
+          <img src="images/shame3.png" alt="Доска позора 3">
+        </figure>
+        <figure class="shame-item" data-sound>
+          <img src="images/shame4.png" alt="Доска позора 4">
+        </figure>
+          <img src="images/shame5.png" alt="Доска позора 1">
+        </figure>
+          <img src="images/shame6.png" alt="Доска позора 1">
+        </figure>
+          <img src="images/shame7.png" alt="Доска позора 1">
+        </figure>
+          <img src="images/shame8.png" alt="Доска позора 1">
+        </figure>
+          <img src="images/shame9.png" alt="Доска позора 1">
+        </figure>
+          <img src="images/shame10.png" alt="Доска позора 1">
+        </figure>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         🎁 МИСТИЧЕСКИЙ ПОДАРОК
+         ======================================================= -->
+    <section id="giftScreen" class="screen inner-screen gift-screen">
+      <button class="back-button" data-back>← назад</button>
+
+      <div class="gift-content">
+        <div id="giftMessage" class="gift-message"></div>
+
+        <button id="chestButton" class="chest-button" aria-label="Открыть сундук">
+          <div class="chest">
+            <img src="images/chest.png" alt="Сундук">
+          </div>
+        </button>
+
+        <div id="giftReward" class="gift-reward hidden">
+          <img src="images/gift.png" alt="Подарок">
+          <p>Сюрприз! Твой будущий подарок - реалистичный 110-сантиметровый карп. ♡<br>К сожалению, глупый вб задерживает заказ.</p>
+        </div>
+
+        <div id="confetti" class="confetti"></div>
+      </div>
+    </section>
+
+  </main>
+
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="sounds/Sweet.m4a" type="audio/mpeg">
+</audio>
+
+  <audio id="applauseSound" preload="auto">
+    <source src="sounds/applause.m4a" type="audio/mpeg">
+  </audio>
+
+  <audio id="disapprovalSound" preload="auto">
+    <source src="sounds/disapproval.m4a" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
